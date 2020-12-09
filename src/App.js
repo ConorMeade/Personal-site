@@ -1,14 +1,18 @@
+import React from 'react';
 import './App.css';
-import NavBar from './Components/NavBar'
-import { data } from './data/data'
-// import { Route } from 'react-router-dom'
-import { Container } from '@material-ui/core'
-import { Box } from '@material-ui/core'
-import { Button } from '@material-ui/core'
+import Home from './pages/Home';
+import NavBar from './Components/NavBar';
+import { data } from './data/data';
+import { Route } from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
+import { Container } from '@material-ui/core';
+import { Box } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   root: {
+    color: 'gray',
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
@@ -34,13 +38,15 @@ function App() {
         <Box my={5}>
           <NavBar />
         </Box>
-        <img className={classes.image} src={`./public/toucan.jpg`} alt="loading..."/>
-        <div>Personal site for {name}. I am a {job} who is currently {description}.</div>
-        <div>
-          <Button color="primary">Click me!</Button>
-        </div>
+        <Route path="/" component={Home} />
       </Container>
-
+      {/* <Typography>
+          <img className={classes.image} src={`./public/toucan.jpg`} alt="loading..."/>
+          <div>Personal site for {name}. I am a {job} who is currently {description}.</div>
+          <div>
+            <Button color="primary">Click me!</Button>
+          </div>
+        </Typography> */}
     </div>
   </>
   );

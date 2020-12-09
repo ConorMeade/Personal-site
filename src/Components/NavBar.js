@@ -16,7 +16,7 @@ export default function NavBar() {
 
     return (
         <div className={classes.root}>
-            <Router>
+            {/* <Router> */}
             <Grid container spacing={5}>
                 <Grid item xs={3} spaceing={3}>
                     <Link component={RouterLink} to="/" variant="body2" color="inherit">
@@ -33,8 +33,13 @@ export default function NavBar() {
                         Resume
                     </Link>
                 </Grid>
+                <Grid item xs={3} spacing={3}>
+                    <Link component={RouterLink} to="/Contact" variant="body2" color="inherit">
+                        Contact
+                    </Link>
+                </Grid>
             </Grid>
-            </Router>
+            {/* </Router> */}
         </div>
     );
 }
