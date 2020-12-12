@@ -12,17 +12,21 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   root: {
-    color: 'gray',
+    color: "gray",
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    height: "100%"
+    height: "100%",
   },
   image: {
     paddingTop: '81.25%',
     borderRadius: '50%',
     margin: '28px'
   }
+  // ,
+  // nav: {
+
+  // }
 })
 
 
@@ -35,7 +39,7 @@ function App() {
     <>
     <div className={classes.root}>
       <Container className={classes.root}>
-        <Box my={5}>
+        <Box my = {2}>
           <NavBar />
         </Box>
         <Route path="/" component={Home} />

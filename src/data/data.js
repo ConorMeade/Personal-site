@@ -25,11 +25,13 @@ export const contactData = [
 		text: "Github",
     },
     {
+        href: "mailto:cmeade6479@gmail.com",
         icon: "fa fa-envelope",
         text: "Email"
     }
 ]
 
 const githubRepos = {
-	
+    record: `https://github.com/ConorMeade/Record-Collection`,
+    
 };

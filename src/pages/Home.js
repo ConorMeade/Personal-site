@@ -13,6 +13,7 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
     root: {
+        // backgroundColor:"red",
         display: 'flex',
         flexWrap: "wrap",
         justifyContent: "space-between"
@@ -22,8 +23,14 @@ const useStyles = makeStyles({
         borderRadius: '50%',
         margin: '28px'
     },
+    header: {
+        textAlign: "left",
+        padding: "5%",
+        margin: "1%"
+    },
     contact: {
-        margin: "20px 10px 0px 0px"
+        top: "35px",
+        margin: "10px"
     }
     
 })
@@ -34,7 +41,8 @@ const Home = () => {
     const classes = useStyles();
 
     return (
-        <Grid container spacing = {5} className={classes.root} >
+        // Main card
+        <Grid container spacing = {8} className={classes.root} >
             <Grid item xs={12}>
                 <Card>
                     <Grid container className={classes.root}>
@@ -55,9 +63,9 @@ const Home = () => {
                                 </Typography>
                                 {contactData.map(social => 
                                     <Button
-                                        className={classes.contact}
                                         variant="outlined"
                                         color="default"
+                                        className={classes.contact}
                                         href={social.href}
                                         key={contactData.indexOf(social)}
                                         aria-label={social.text}
@@ -69,9 +77,43 @@ const Home = () => {
                     </Grid>
                 </Card>
             </Grid>
-            {/* <Grid item xs={12}>
-                
-            </Grid> */}
+            {/* End Main Card */}
+
+
+            {/* About Me */}
+            <Grid item xs = {12}>
+                <Card className={classes.root}>
+                    <CardContent>
+                        <Typography variant="body2">
+                            ABOUT ME
+                        </Typography>
+                    </CardContent>
+                </Card>
+            </Grid>
+            
+            {/* End About Me */}
+
+
+            {/* Technichal Skills & Interests */}
+            <Grid item xs = {6}>
+                <Card className={classes.root}>
+                    <CardContent>
+                        <Typography variant="body2">
+                            SKILLS
+                        </Typography>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item xs = {6}>
+                <Card className={classes.root}>
+                    <CardContent>
+                        <Typography variant="body2">
+                            INTERESTS
+                        </Typography>
+                    </CardContent>
+                </Card>
+            </Grid>
+
         </Grid>
 
         

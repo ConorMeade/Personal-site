@@ -5,9 +5,16 @@ import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
-    root: {
+    nav: {
         flexGrow: 1,
-        margin: "1%"
+        fontSize: 30,
+        height: '100%',
+        justifyContent: "space-between"
+    },
+    grid: {
+        position: 'relative',
+        padding: 0,
+        margin: 0
     }
 })
 
@@ -15,26 +22,29 @@ export default function NavBar() {
     const classes = useStyles()
 
     return (
-        <div className={classes.root}>
+        <div className={classes.grid}>
             {/* <Router> */}
-            <Grid container spacing={5}>
-                <Grid item xs={3} spaceing={3}>
-                    <Link component={RouterLink} to="/" variant="body2" color="inherit">
+            <Grid container xs={12} spacing={5} className={classes.nav}>
+                <Grid item xs={6} sm ={3}>
+                        Conor Meade
+                </Grid>
+                <Grid item xs={2} sm={2}>
+                    <Link component={RouterLink} to="/" variant="body1" color="inherit">
                         Home
                     </Link>
                 </Grid>
-                <Grid item xs={3} spacing={3}>
-                    <Link component={RouterLink} to="/Projects" variant="body2" color="inherit" >
+                <Grid item xs={2} sm={2}>
+                    <Link component={RouterLink} to="/Projects" variant="body1" color="inherit" >
                         Projects
                     </Link>
                 </Grid>
-                <Grid item xs={3} spacing={3}>
-                    <Link component={RouterLink} to="/Resume" variant="body2" color="inherit">
+                <Grid item xs={2} sm={2}>
+                    <Link component={RouterLink} to="/Resume" variant="body1" color="inherit">
                         Resume
                     </Link>
                 </Grid>
-                <Grid item xs={3} spacing={3}>
-                    <Link component={RouterLink} to="/Contact" variant="body2" color="inherit">
+                <Grid item xs={2} sm={2}>
+                    <Link component={RouterLink} to="/Contact" variant="body1" color="inherit">
                         Contact
                     </Link>
                 </Grid>
