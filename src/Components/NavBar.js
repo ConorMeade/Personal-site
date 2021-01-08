@@ -43,11 +43,6 @@ export default function NavBar() {
                         Resume
                     </Link>
                 </Grid>
-                <Grid item xs={2} sm={2}>
-                    <Link component={RouterLink} to="/Contact" variant="body1" color="inherit">
-                        Contact
-                    </Link>
-                </Grid>
             </Grid>
             {/* </Router> */}
         </div>
