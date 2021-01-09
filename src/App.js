@@ -32,9 +32,6 @@ const useStyles = makeStyles({
 
 function App() {
   const classes = useStyles()
-  const name = data.name
-  const job = data.occupation
-  const description = data.description
   return (
     <>
     <div className={classes.root}>

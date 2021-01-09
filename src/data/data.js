@@ -60,6 +60,10 @@ export const skills = [
     {
         key: 6,
         name: "Javascript"
+    },
+    {
+        key: 7,
+        name: "ASP.NET"
     }
 ]
 

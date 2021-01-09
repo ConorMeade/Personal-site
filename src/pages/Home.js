@@ -30,15 +30,8 @@ const useStyles = makeStyles({
         margin: "1%"
     },
     contact: {
-        top: '15px',
-        margin: "20px 10px 10px1px",
-        // top: "35px",
-        // margin: "10px",
-        // marginright: '40',
-        // spacing: 8
-    },
-    links: {
-
+        top: '25px',
+        margin: '5px 0'
     },
     skillsback: {
         minHeight: "65px",
@@ -58,6 +51,12 @@ const useStyles = makeStyles({
         fontWeight: "bold",
         textDecoration: "none",
         color: "#0a3f5e"
+    },
+    links: {
+        color: 'black',
+        '&:hover': {
+            background: '#dbe9f1'
+        }
     }
 })
 
@@ -87,17 +86,20 @@ const Home = () => {
                                     {headline}
                                     <br />
                                 </Typography>
-                                {contactData.map(social => 
-                                    <Button
-                                        className={classes.contact}
-                                        variant="outlined"
-                                        color="default"
-                                        href={social.href}
-                                        key={contactData.indexOf(social)}
-                                        aria-label={social.text}
-                                        >
-                                            <Icon className={social.icon}/>
-                                    </Button>)}
+                                <CardActions>
+                                    {contactData.map(social => 
+                                        <Button
+                                            key={contactData.indexOf(social)}
+                                            className={classes.contact}
+                                            style={{padding:10, marginHorizontal:30}}
+                                            variant="outlined"
+                                            color="default"
+                                            href={social.href}
+                                            aria-label={social.text}
+                                            >
+                                                <Icon className={social.icon}/>
+                                        </Button>)}
+                                </CardActions>
                             </CardContent>
                         </Grid>
                     </Grid>
@@ -115,9 +117,9 @@ const Home = () => {
                         </Typography>
                         <br />
 
-                        <Typography variant="body2">
-                            In May 2020, I graduated from the <Link href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link> where I majored in Computer Science with a minor in Mathematics. I have been programming since I was a sophomore in high school and have studied variety of Computer Science disceplines. 
-                            My main interests are in Web Programming, Database Management, and Digitial Forensics. I am eager to enter the world of software development where I can develop my skills further and become a dependable engineer.
+                        <Typography variant="body1">
+                            In May 2020, I graduated from the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link> where I majored in Computer Science with a minor in Mathematics. I have been programming since I was a sophomore in high school and have studied variety of Computer Science disceplines. 
+                            My main interests are in <strong>Web Programming, Database Management, </strong> and <strong>Digitial Forensics.</strong> I am eager to enter the world of software development where I can develop my skills further and become a dependable engineer.
                         </Typography>
                     </CardContent>
                 </Card>
@@ -134,7 +136,7 @@ const Home = () => {
                             Technichal Skills
                         </Typography>
                         <CardActions className={classes.skillsback}>
-                            {skills.map(skill => <a className={classes.skillsstyle}><span key={skill.key}><code>{skill.name}</code></span></a>)}
+                            {skills.map(skill => <p className={classes.skillsstyle}><span key={skill.key}><code>{skill.name}</code></span></p>)}
                         </CardActions>
                     </CardContent>
                 </Card>
@@ -146,7 +148,7 @@ const Home = () => {
                             Interests
                         </Typography>
                         <Typography variant="body2">
-                            Aside from coding, I have an affinity for music, exercising, gaming, reading, and Boston Celtics Basketball. I hope to one day travel and experience the world.
+                            Aside from coding, I have an affinity for music, exercising, gaming, reading, and Boston Celtics Basketball. I hope to one day travel and experience the world. This year, I am going to try to learn how to play piano and read at least ten books.
                         </Typography>
                     </CardContent>
                 </Card>
