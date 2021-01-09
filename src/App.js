@@ -2,13 +2,12 @@ import React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import NavBar from './Components/NavBar';
-import { data } from './data/data';
+import Projects from './pages/Projects';
 import { Route } from 'react-router-dom';
-import Typography from '@material-ui/core/Typography';
 import { Container } from '@material-ui/core';
 import { Box } from '@material-ui/core';
-import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
+
 
 const useStyles = makeStyles({
   root: {
@@ -23,10 +22,6 @@ const useStyles = makeStyles({
     borderRadius: '50%',
     margin: '28px'
   }
-  // ,
-  // nav: {
-
-  // }
 })
 
 
@@ -39,7 +34,8 @@ function App() {
         <Box my = {2}>
           <NavBar />
         </Box>
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route path="/Projects" component={Projects} />
       </Container>
       {/* <Typography>
           <img className={classes.image} src={`./public/toucan.jpg`} alt="loading..."/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link as RouterLink, BrowserRouter as Router } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
@@ -30,7 +30,7 @@ export default function NavBar() {
     return (
         <div className={classes.grid}>
             {/* <Router> */}
-            <Grid container xs={12} spacing={5} className={classes.nav}>
+            <Grid container spacing={5} className={classes.nav}>
                 <Grid style={{color: '#dbe9f1'}} item xs={6} sm ={3}>
                         Conor Meade
                 </Grid>
@@ -45,7 +45,7 @@ export default function NavBar() {
                     </Link>
                 </Grid>
                 <Grid item xs={2} sm={2}>
-                    <Link className={classes.links} href={'Conor Meade Resume (site).pdf'} variant="body1" color="inherit">
+                    <Link className={classes.links} href={'Conor Meade Resume.pdf'} variant="body1" color="inherit">
                         Resume
                     </Link>
                 </Grid>

@@ -6,13 +6,4 @@
 body {
   background-color: #e9bcb7;
   background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
-  /* --pink-one: #f4d2c6;
-  --pink-two: #fdd3d8;
-  --light-blue: #cbe4f4;
-  --light-blue-two: #dbe9f1;
-  --med-blue-one: #bbd1df;
-  --med-blue-two: #93acc9;
-  --dark-blue: #6e8aaa;
-  --red-brown: #523237;
-  background: linear-gradient(var(--pink-one), var(--pink-two), var(--light-blue), var(--med-blue-one), var(--med-blue-two), var(--dark-blue) ); */
 }

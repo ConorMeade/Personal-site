@@ -67,7 +67,28 @@ export const skills = [
     }
 ]
 
-export const githubRepos = {
-    record: `https://github.com/ConorMeade/Record-Collection`,
+export const projects = [
+    {
+        title: "Record Collection Slideshow",
+        imageUrl: "album-slideshow.png",
+        description: "A running and clickable slideshow with my record collection on display (Full Stack).",
+        technology: "React • JavaScript • Flask • SQL • Node.js • Semantic UI • Discogs API",
+        git: `https://github.com/ConorMeade/Record-Collection`
+
+    },
+    {
+        title: "UMass Vultures",
+        imageUrl: "vultures.png",
+        description: "School Project focused on providing a posting list of free and reduced price meal options to students.",
+        technology: "Python • Django • Bootstrap • SQL",
+        git: `https://github.com/ConorMeade/s_sasquatch5`
+    },
+    {
+        title: "Developer Portfolio Site",
+        imageUrl: 'homepage.png',
+        description: "Personal developer site, lists info about myself as well as my projects/resume",
+        technology: "React • Javascript • MaterialUI • HTML • CSS",
+        git: `https://github.com/ConorMeade/Personal-site`
+    },
     
-};
+];
