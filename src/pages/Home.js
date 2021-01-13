@@ -148,7 +148,7 @@ const Home = () => {
                             Interests
                         </Typography>
                         <Typography variant="body2">
-                            Aside from coding, I have an affinity for music, exercising, gaming, reading, and Boston Celtics Basketball. I hope to one day travel and experience the world. This year, I am going to try to learn how to play piano and read at least ten books.
+                            Aside from coding, I have an affinity for music, exercising, gaming, reading, and Boston Celtics Basketball. I hope to one day travel and experience the world. This year, I am going to learn how to play piano and read at least ten books.
                         </Typography>
                     </CardContent>
                 </Card>

@@ -17,9 +17,9 @@ const useStyles = makeStyles({
         margin: 0
     },
     links: {
-        color: 'black',
+        color: '#dbe9f1',
         '&:hover': {
-            background: '#dbe9f1'
+            background: '#black'
         }
     },
 })
