@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Home from './pages/Home';
 import NavBar from './Components/NavBar';
@@ -26,6 +26,9 @@ const useStyles = makeStyles({
 
 
 function App() {
+  useEffect(() => {
+    document.title = "Conor Meade - Junior Developer"
+  }, [])
   const classes = useStyles()
   return (
     <>
