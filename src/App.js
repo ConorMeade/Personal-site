@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import NavBar from './Components/NavBar';
 import Projects from './pages/Projects';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { Container } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
@@ -36,8 +36,10 @@ function App() {
         <Box my = {2}>
           <NavBar />
         </Box>
-        <Route exact path="/" component={Home} />
-        <Route path="/Projects" component={Projects} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/Projects" component={Projects} />
+        </Switch>
       </Container>
     </div>
   );
