@@ -30,22 +30,22 @@ export default function NavBar() {
     return (
         <div className={classes.grid}>
             {/* <Router> */}
-            <Grid container spacing={5} className={classes.nav}>
+            <Grid container spacing={3} className={classes.nav}>
                 <Grid style={{color: '#dbe9f1'}} item xs={6} sm ={3}>
                         Conor Meade
                 </Grid>
-                <Grid item xs={2} sm={2}>
+                <Grid item xs={2}>
                     <Link className={classes.links} component={RouterLink} to="/" variant="body1" color="inherit">
                         Home
                     </Link>
                 </Grid>
-                <Grid item xs={2} sm={2}>
+                <Grid item xs={2}>
                     <Link className={classes.links} component={RouterLink} to="/Projects" variant="body1" color="inherit" >
                         Projects
                     </Link>
                 </Grid>
-                <Grid item xs={2} sm={2}>
-                    <Link className={classes.links} href={'Conor Meade Resume.pdf'} variant="body1" color="inherit">
+                <Grid item xs={2} >
+                    <Link className={classes.links} href={'Conor Meade Resume(1).pdf'} variant="body1" color="inherit">
                         Resume
                     </Link>
                 </Grid>
