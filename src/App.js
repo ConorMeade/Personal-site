@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import Home from './pages/Home';
+import Footer from './Components/Footer'
 import NavBar from './Components/NavBar';
 import Projects from './pages/Projects';
 import { Route, Switch } from 'react-router-dom';
@@ -21,6 +22,11 @@ const useStyles = makeStyles({
     paddingTop: '81.25%',
     borderRadius: '50%',
     margin: '28px'
+  },
+  footer : {
+    padding: "2%",
+    marginTop: 'auto',
+    marginLeft: 'auto',
   }
 })
 
@@ -40,6 +46,9 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/Projects" component={Projects} />
         </Switch>
+        <footer className={classes.footer}>
+          <Footer />
+        </footer>
       </Container>
     </div>
   );

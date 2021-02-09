@@ -3,6 +3,7 @@ import "font-awesome/css/font-awesome.css";
 export const data = {
     firstName: "Conor",
     lastName: "Meade",
+    website: "https://www.conormeade.com",
     name: "Conor Meade",
     occupation: "Software Engineer",
     headline: "Junior Software Developer, currently living in the Boston MA area",
@@ -64,7 +65,16 @@ export const skills = [
     {
         key: 7,
         name: "ASP.NET"
+    },
+    {
+        key: 8,
+        name: "Java"
+    },
+    {
+        key: 9,
+        name: "Typescript"
     }
+
 ]
 
 export const projects = [
