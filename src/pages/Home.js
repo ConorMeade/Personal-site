@@ -118,7 +118,7 @@ const Home = () => {
                         <br />
 
                         <Typography variant="body1">
-                            In May 2020, I graduated from the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link> where I majored in Computer Science with a minor in Mathematics. I have been programming since I was a sophomore in high school and have studied variety of Computer Science disceplines. 
+                            In May 2020, I graduated from the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link> where I majored in Computer Science with a minor in Mathematics. I have been programming since I was a sophomore in high school and have studied variety of Computer Science disciplines. 
                             My main interests are in <strong>Web Programming, Database Management, </strong> and <strong>Digitial Forensics.</strong> I am eager to enter the world of software development where I can develop my skills further and become a dependable engineer.
                         </Typography>
                     </CardContent>
