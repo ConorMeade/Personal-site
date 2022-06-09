@@ -56,7 +56,8 @@ const useStyles = makeStyles({
         color: 'black',
         '&:hover': {
             background: '#dbe9f1'
-        }
+        },
+        textDecoration: 'underline'
     }
 })
 
@@ -119,7 +120,7 @@ const Home = () => {
 
                         <Typography variant="body1">
                             In May 2020, I graduated from the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link> where I majored in Computer Science with a minor in Mathematics. I have been programming since I was a sophomore in high school and have studied variety of Computer Science disciplines. 
-                            My main interests are in <strong>Web Programming, Database Management, </strong> and <strong>Digitial Forensics.</strong> I am eager to enter the world of software development where I can develop my skills further and become a dependable engineer.
+                            My main interests are in <strong>Web Programming, Database Management, </strong> and <strong>Digitial Forensics.</strong>
                         </Typography>
                     </CardContent>
                 </Card>
@@ -148,7 +149,7 @@ const Home = () => {
                             Interests
                         </Typography>
                         <Typography variant="body2">
-                            Aside from coding, I have an affinity for music, exercising, gaming, reading, and Boston Celtics Basketball. This year, I am going to learn how to play piano and try to read at least ten books.
+                            When I am not programming or learning new technologies, I enjoy listenting to music, playing a game, hitting the gym or reading. I'm an avid Boston Celtics fan.
                         </Typography>
                     </CardContent>
                 </Card>

@@ -6,7 +6,7 @@ export const data = {
     website: "https://www.conormeade.com",
     name: "Conor Meade",
     occupation: "Software Engineer",
-    headline: "Junior Software Developer, currently living in the Boston MA area",
+    headline: "Software Developer • Boston MA area",
     alma: "University of Massachusetts Amherst",
     github: "https://github.com/ConorMeade",
     linkedin: "https://www.linkedin.com/in/conor-meade-23cm/",
@@ -44,7 +44,7 @@ export const skills = [
     },
     {
         key: 2,
-        name: "PostgreSQL"
+        name: "SQL"
     },
     {
         key: 3,
@@ -73,8 +73,15 @@ export const skills = [
     {
         key: 9,
         name: "Typescript"
+    },
+    {
+        key: 10,
+        name: "Shell Scripting"
+    },
+    {
+        key: 10,
+        name: "Rust"
     }
-
 ]
 
 export const projects = [
