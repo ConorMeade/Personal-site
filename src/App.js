@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 
 function App() {
   useEffect(() => {
-    document.title = "Conor Meade - Junior Developer"
+    document.title = "Conor Meade - Software Developer"
   }, [])
   const classes = useStyles()
   return (
