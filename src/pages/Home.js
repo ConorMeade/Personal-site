@@ -119,7 +119,7 @@ const Home = () => {
                         <br />
 
                         <Typography variant="body1">
-                            I am a graduate of the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link>, majoring in Computer Science with a minor in Mathematics. I have been programming for over seven years and have studied variety of Computer Science disciplines. 
+                            I am a graduate of the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link>, majoring in Computer Science with a minor in Mathematics. I have been programming for over nine years and have studied variety of Computer Science disciplines. 
                             My professional experience is primarily in back end web development with a mix of front end development as well. I am passionate about learning new technologies and working within a team to create helpful software. My main interests are in <strong>Web Programming, Database Management, Systems,</strong> and <strong>Digitial Forensics.</strong>
                         </Typography>
                     </CardContent>

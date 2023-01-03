@@ -45,7 +45,7 @@ export default function NavBar() {
                     </Link>
                 </Grid>
                 <Grid item xs={2} >
-                    <Link className={classes.links} href={'Conor Meade Resume (2022).pdf'} variant="body1" color="inherit">
+                    <Link className={classes.links} href={'Conor Meade Resume (2023).pdf'} variant="body1" color="inherit">
                         Resume
                     </Link>
                 </Grid>
