@@ -94,11 +94,18 @@ export const projects = [
 
     },
     {
-        title: "UMass Vultures",
-        imageUrl: "vultures.png",
-        description: "School Project focused on providing a posting list of free and reduced price meal options to students.",
-        technology: "Python • Django • Bootstrap • SQL",
-        git: `https://github.com/ConorMeade/s_sasquatch5`
+        title: "Fitness Dashboard",
+        imageUrl: "fitness.png",
+        description: "Dashboard application to track exercise progress, add new exercises, and count calories.",
+        technology: "React • Typescript • Node.js • Express.js • MongoDB",
+        git: `https://github.com/ConorMeade/exercise-app`
+    },
+    {
+        title: "Stock Tracking App",
+        imageUrl: "CSharp_Docker.jpg",
+        description: "Takes in stock ticker symbol (MSFT, AAPL, etc.) and date ranges to determine the daily returns for those given dates using iexcloud data.",
+        technology: "C# • Docker • .NET Core",
+        git: `https://github.com/ConorMeade/StockTracker`
     },
     {
         title: "Developer Portfolio Site",
