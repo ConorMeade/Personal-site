@@ -113,6 +113,29 @@ export const projects = [
         description: "Personal developer site, lists info about myself as well as my projects/resume",
         technology: "React • Javascript • MaterialUI • HTML • CSS",
         git: `https://github.com/ConorMeade/Personal-site`
+    },    
+];
+
+export const readingList = [
+    {
+        title: "The Pragmatic Programmer",
+        author: "Andrew Hunt & David Thomas",
+        type: "Book",
+        description: "Practical advice for software engineers on maintainable design, testability, and craftsmanship.",
+        link: "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
     },
-    
+    {
+        title: "Designing Data-Intensive Applications",
+        author: "Martin Kleppmann",
+        type: "Book",
+        description: "A modern guide to scalable, reliable, and maintainable data systems.",
+        link: "https://dataintensive.net/"
+    },
+    {
+        title: "The Morning Paper",
+        author: "Adrian Colyer",
+        type: "Blog",
+        description: "Daily summaries of influential academic computer science papers and practical ideas.",
+        link: "https://blog.acolyer.org/"
+    }
 ];

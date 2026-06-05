@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Footer from './Components/Footer'
 import NavBar from './Components/NavBar';
 import Projects from './pages/Projects';
+import ReadingList from './pages/ReadingList';
 import { Route, Switch } from 'react-router-dom';
 import { Container } from '@material-ui/core';
 import { Box } from '@material-ui/core';
@@ -33,7 +34,7 @@ const useStyles = makeStyles({
 
 function App() {
   useEffect(() => {
-    document.title = "Conor Meade - Software Developer"
+    document.title = "Conor Meade - Software Developer and Data Scientist Student"
   }, [])
   const classes = useStyles()
   return (
@@ -45,6 +46,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/Projects" component={Projects} />
+          <Route path="/reading-list" component={ReadingList} />
         </Switch>
         <footer className={classes.footer}>
           <Footer />

@@ -44,6 +44,11 @@ export default function NavBar() {
                         Projects
                     </Link>
                 </Grid>
+                <Grid item xs={2}>
+                    <Link className={classes.links} component={RouterLink} to="/reading-list" variant="body1" color="inherit" >
+                        Reading List
+                    </Link>
+                </Grid>
                 <Grid item xs={2} >
                     <Link className={classes.links} href={'Conor Meade Resume (2023).pdf'} variant="body1" color="inherit">
                         Resume

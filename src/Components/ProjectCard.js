@@ -8,25 +8,38 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Icon from '@material-ui/core/Icon';
-import Link from '@material-ui/core/Link';
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
     root: {
-        width: "100%",
-        height: "100%",
+        width: '100%',
         display: 'flex',
-        flexWrap: "wrap",
-        justifyContent: "space-evenly",
-        alignContent: "space-between"
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        backgroundColor: theme.palette.background.paper,
+    },
+    media: {
+        width: '100%',
+        height: 0,
+        paddingTop: '56.25%',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        [theme.breakpoints.down('sm')]: {
+            paddingTop: '75%',
+        },
     },
     caps: {
-        fontVariant: "all-small-caps"
+        fontVariant: 'all-small-caps',
     },
     content: {
-        alignContent: "top"
-    }
-})
+        display: 'flex',
+        flexDirection: 'column',
+        gap: theme.spacing(1),
+    },
+    actions: {
+        justifyContent: 'flex-end',
+    },
+}))
 
 const ProjectCard = props => {
     const classes = useStyles();
@@ -34,32 +47,27 @@ const ProjectCard = props => {
 
     return (
         <Card className={classes.root}>
-            <CardActionArea>
-                <Link href={git}>
-                    <CardMedia
-                        component="img"
-                        alt={description}
-                        image={imageUrl}
-                        title={title}
-                        height="700px"
-                        // width="700px"
-                    />
-                </Link>
+            <CardActionArea component="a" href={git} target="_blank" rel="noopener noreferrer">
+                <CardMedia
+                    className={classes.media}
+                    image={imageUrl}
+                    title={title}
+                />
             </CardActionArea>
-                <CardContent className={classes.content}>
-                    <Typography variant="h5" component="h2">
-                        {title}
-                    </Typography>
-                    <Typography variant="body1" color="textSecondary" component="p">
-                        {description}
-                    </Typography>
-                    <Typography variant="body1" color="textSecondary" component="p" className={classes.caps}>
-                        {technology}
-                    </Typography>
-                </CardContent>
-            <CardActions>
-                <Button size="small" color="default" href={git} aria-label="view source code">
-                    <Icon className="fa fa-github"/>
+            <CardContent className={classes.content}>
+                <Typography variant="h5" component="h2">
+                    {title}
+                </Typography>
+                <Typography variant="body1" color="textSecondary" component="p">
+                    {description}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p" className={classes.caps}>
+                    {technology}
+                </Typography>
+            </CardContent>
+            <CardActions className={classes.actions}>
+                <Button size="small" color="default" href={git} aria-label="view source code" target="_blank" rel="noopener noreferrer">
+                    <Icon className="fa fa-github" />
                 </Button>
             </CardActions>
         </Card>

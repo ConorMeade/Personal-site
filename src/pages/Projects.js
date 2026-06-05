@@ -17,9 +17,9 @@ const useStyles = makeStyles({
 const Projects = () => {
     const classes = useStyles();
     return (
-        <Grid container spacing={1} className={classes.root}>
+        <Grid container spacing={2} className={classes.root}>
             {projects.map(project =>
-                <Grid item sm={12} key={projects.indexOf(project)}>
+                <Grid item xs={12} md={6} key={project.title || projects.indexOf(project)}>
                     <ProjectCard project={project} />
                 </Grid>
             )}

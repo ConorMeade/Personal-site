@@ -80,9 +80,6 @@ const Home = () => {
                         </Grid>
                         <Grid item sm={5}>
                             <CardContent className={classes.header}>
-                                <Typography gutterBottom variant="h2" component="h2">
-                                    Hi, I'm {firstName}
-                                </Typography>
                                 <Typography variant="body1" component="body1">
                                     {headline}
                                     <br />
@@ -119,8 +116,8 @@ const Home = () => {
                         <br />
 
                         <Typography variant="body1">
-                            I am a graduate of the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link>, majoring in Computer Science with a minor in Mathematics. I have been programming for over nine years and have studied variety of Computer Science disciplines. 
-                            My professional experience is primarily in back end web development with a mix of front end development as well. I am passionate about learning new technologies and working within a team to create helpful software. My main interests are in <strong>Web Programming, Database Management, Systems,</strong> and <strong>Digitial Forensics.</strong>
+                            I am a graduate of the <Link className={classes.links} href="https://www.cics.umass.edu/">UMass Amherst College of Information & Computer Sciences</Link>, majoring in Computer Science with a minor in Mathematics. I am currently obtaining my Master's in Data Science at Tufts University.
+                            My professional experience is primarily in back end web development using SQL Server (Postgres, MySQL) with a mix of front end development in React and DevOps experience in Azure. I am passionate about learning new technologies and working within a team to create interesting and helpful software. My main interests are in <strong>Database Management, DevOps, Reinforcement Learning</strong> and <strong>Digitial Forensics.</strong>
                         </Typography>
                     </CardContent>
                 </Card>
@@ -142,7 +139,7 @@ const Home = () => {
                     </CardContent>
                 </Card>
             </Grid>
-            <Grid item xs = {6}>
+            {/* <Grid item xs = {6}>
                 <Card className={classes.root}>
                     <CardContent>
                         <Typography variant="h6">
@@ -153,7 +150,7 @@ const Home = () => {
                         </Typography>
                     </CardContent>
                 </Card>
-            </Grid>
+            </Grid> */}
 
         </Grid>
 
