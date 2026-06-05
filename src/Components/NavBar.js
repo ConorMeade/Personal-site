@@ -31,25 +31,22 @@ export default function NavBar() {
         <div className={classes.grid}>
             {/* <Router> */}
             <Grid container spacing={3} className={classes.nav}>
-                <Grid style={{color: '#dbe9f1'}} item xs={6} sm ={3}>
-                        Conor Meade
-                </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={3}>
                     <Link className={classes.links} component={RouterLink} to="/" variant="body1" color="inherit">
                         Home
                     </Link>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={3}>
                     <Link className={classes.links} component={RouterLink} to="/Projects" variant="body1" color="inherit" >
                         Projects
                     </Link>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={3}>
                     <Link className={classes.links} component={RouterLink} to="/reading-list" variant="body1" color="inherit" >
                         Reading List
                     </Link>
                 </Grid>
-                <Grid item xs={2} >
+                <Grid item xs={3} >
                     <Link className={classes.links} href={'Conor Meade Resume (2023).pdf'} variant="body1" color="inherit">
                         Resume
                     </Link>

@@ -63,7 +63,7 @@ const useStyles = makeStyles({
 
 
 const Home = () => {
-    const { firstName, profilePic, headline } = data
+    const { firstName, lastName, profilePic, headline } = data
     const classes = useStyles();
 
     return (
@@ -80,7 +80,10 @@ const Home = () => {
                         </Grid>
                         <Grid item sm={5}>
                             <CardContent className={classes.header}>
-                                <Typography variant="body1" component="body1">
+                                <Typography variant="h4" component="h1">
+                                    {firstName} {lastName}
+                                </Typography>
+                                <Typography variant="body1" component="body1" style={{ marginTop: '0.5rem' }}>
                                     {headline}
                                     <br />
                                 </Typography>

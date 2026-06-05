@@ -48,6 +48,10 @@ export const skills = [
     },
     {
         key: 3,
+        name: "T-SQL / SQL Server"
+    },
+    {
+        key: 3,
         name: "C#"
     },
     {
@@ -80,7 +84,11 @@ export const skills = [
     },
     {
         key: 10,
-        name: "Rust"
+        name: "R"
+    },
+    {
+        key: 10,
+        name: "Azure DevOps"
     }
 ]
 
@@ -94,18 +102,18 @@ export const projects = [
 
     },
     {
-        title: "Fitness Dashboard",
-        imageUrl: "fitness.png",
-        description: "Dashboard application to track exercise progress, add new exercises, and count calories.",
-        technology: "React • Typescript • Node.js • Express.js • MongoDB",
-        git: `https://github.com/ConorMeade/exercise-app`
+        title: "MARL Delivery Tasks",
+        imageUrl: "",
+        description: "an examination into Multi Agent Reinforcement Learning. The PettingZoo simple_spread_v3 environment is used to facilitate these experiments.",
+        technology: "Python • Reinforcement Learning • AI • PettingZoo",
+        git: `https://github.com/ConorMeade/MARL-Delivery-Tasks`
     },
     {
-        title: "Stock Tracking App",
+        title: "NBAGraphs",
         imageUrl: "CSharp_Docker.jpg",
-        description: "Takes in stock ticker symbol (MSFT, AAPL, etc.) and date ranges to determine the daily returns for those given dates using iexcloud data.",
-        technology: "C# • Docker • .NET Core",
-        git: `https://github.com/ConorMeade/StockTracker`
+        description: "A graphical representation of NBA stats, built with C# and .NET Core, and deployed using Docker.",
+        technology: "C# • Javascript • .NET Core",
+        git: `https://github.com/ConorMeade/NBAGraphs`
     },
     {
         title: "Developer Portfolio Site",
@@ -118,24 +126,24 @@ export const projects = [
 
 export const readingList = [
     {
-        title: "The Pragmatic Programmer",
-        author: "Andrew Hunt & David Thomas",
+        title: "Infinite Jest",
+        author: "David Foster Wallace",
         type: "Book",
-        description: "Practical advice for software engineers on maintainable design, testability, and craftsmanship.",
-        link: "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
+        description: "A sprawling, complex novel that explores themes of addiction, entertainment, and the human condition.",
+        link: "https://www.goodreads.com/book/show/11486.Infinite_Jest"
     },
     {
-        title: "Designing Data-Intensive Applications",
-        author: "Martin Kleppmann",
+        title: "Portnoy's Complaint",
+        author: "Philip Roth",
         type: "Book",
-        description: "A modern guide to scalable, reliable, and maintainable data systems.",
-        link: "https://dataintensive.net/"
+        description: "A humorous and provocative novel that delves into the psyche of a young man grappling with his desires and identity.",
+        link: "https://www.goodreads.com/book/show/11487.Portnoy_s_Complaint"
     },
     {
-        title: "The Morning Paper",
-        author: "Adrian Colyer",
-        type: "Blog",
-        description: "Daily summaries of influential academic computer science papers and practical ideas.",
-        link: "https://blog.acolyer.org/"
+        title: "Moby Dick",
+        author: "Herman Melville",
+        type: "Book",
+        description: "Call Me Ishmael. A classic tale of obsession and revenge on the high seas, as Captain Ahab hunts the elusive white whale.",
+        link: "https://www.goodreads.com/book/show/153747.Moby_Dick"
     }
 ];
