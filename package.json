@@ -52,5 +52,8 @@
   "volta": {
     "node": "20.20.2",
     "yarn": "4.16.0"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0"
   }
 }
