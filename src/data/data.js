@@ -10,7 +10,7 @@ export const data = {
     alma: "University of Massachusetts Amherst",
     github: "https://github.com/ConorMeade",
     linkedin: "https://www.linkedin.com/in/conor-meade-23cm/",
-    profilePic: "headshot1.jpg"
+    profilePic: "/headshot1.JPG"
 }
 
 
