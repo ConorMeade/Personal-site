@@ -73,12 +73,12 @@ const Home = () => {
                 <Card>
                     <Grid container className={classes.root}>
                         {/* Profile Picture */}
-                        <Grid item sm={3}>
-                            <CardMedia 
+                        <Grid item xs={12} sm={3}>
+                            <CardMedia
                                 className = {classes.image}
                                 image={profilePic}/>
                         </Grid>
-                        <Grid item sm={5}>
+                        <Grid item xs={12} sm={5}>
                             <CardContent className={classes.header}>
                                 <Typography variant="h4" component="h1">
                                     {firstName} {lastName}
@@ -130,7 +130,7 @@ const Home = () => {
 
 
             {/* Technichal Skills & Interests */}
-            <Grid item xs = {6}>
+            <Grid item xs = {12}>
                 <Card className={classes.root}>
                     <CardContent>
                         <Typography variant="h6">
